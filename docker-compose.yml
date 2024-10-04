@@ -2,8 +2,6 @@ version: "3.8"
 
 services:
   sonarqube:
-    depends_on:
-      - db
     image: mc1arke/sonarqube-with-community-branch-plugin:${SONARQUBE_VERSION}
     build:
       context: .
