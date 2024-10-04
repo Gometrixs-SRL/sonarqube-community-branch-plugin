@@ -12,8 +12,6 @@ services:
         SONARQUBE_VERSION: ${SONARQUBE_VERSION}
         PLUGIN_VERSION: ${PLUGIN_VERSION}
     container_name: sonarqube
-    ports:
-      - 9000:9000
     environment:
       - SONAR_JDBC_URL=${SONAR_JDBC_URL}
       - SONAR_JDBC_USERNAME=${SONAR_JDBC_USERNAME}
